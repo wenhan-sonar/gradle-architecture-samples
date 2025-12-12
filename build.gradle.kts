@@ -20,4 +20,12 @@ plugins {
     alias(libs.plugins.ksp) apply false
     alias(libs.plugins.hilt) apply false
     alias(libs.plugins.compose.compiler) apply false
+    id("org.sonarqube") version "6.3.1.5724"
+}
+
+sonar {
+  properties {
+    property("sonar.projectKey", "wenhan-sonar_gradle-architecture-samples_924409ad-bb30-41a3-bdbb-2a1a0512eeab")
+    property("sonar.projectName", "gradle-architecture-samples")
+  }
 }
